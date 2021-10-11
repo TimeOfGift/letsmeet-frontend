@@ -1,0 +1,3 @@
+const greetings = () => {
+    return 'Hello';
+}
