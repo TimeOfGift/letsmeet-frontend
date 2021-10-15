@@ -1,10 +1,15 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import EventDetails from './components/EventDetails';
+import Events from './components/EventObj'
 import './App.scss';
 
 function App() {
+  const [events, setEvent] = useState(Events);
+
+
   return (
     <div className="App">
-      <p>hello</p>
+      <EventDetails event={events}/>
     </div>
   );
 }
