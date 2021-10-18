@@ -7,7 +7,7 @@ export default {
   args:{
     name: 'Hammed'
   }
-
+  
 };
 
 export const Template = (args) => <ShowName {...args} />;
