@@ -2,6 +2,7 @@ import React from "react";
 import './landingPage.scss';
 import event from '../images/event.png';
 
+
 function LandingPage() {
      return (
           <div className='background-image'>
