@@ -1,5 +1,5 @@
-import './App.scss';
-import LandingPage from './pages/LandindPage';
+import "./App.scss";
+import LandingPage from "./pages/LandindPage";
 
 function App() {
   return (
