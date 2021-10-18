@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import EventDetails from './components/EventDetails';
-import Events from './components/EventObj'
+import EventDetails from './components/EventDetails/EventDetails';
+import Events from './components/EventDetails/EventObj'
 import './App.scss';
 
 function App() {
