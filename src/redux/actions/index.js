@@ -1,4 +1,4 @@
-import { Index } from "../action-creators";
+import { Index } from "../actionCreators";
 
 const firstAction = () => (dispatchEvent) => {
   dispatchEvent({
