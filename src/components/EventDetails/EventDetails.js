@@ -19,7 +19,6 @@ const EventDetails = ({event}) => {
             </div>
         </div>
     );
-
 }
 
 export default EventDetails;

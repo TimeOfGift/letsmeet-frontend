@@ -11,7 +11,7 @@ export default {
         text2: 'Hello',
         attendant: 'Obogowire CodeLord, Ubani Machine',
         tags: '#python #meetup #tech #coding #lipsum',
-        img:''
+        img:'https://tokkahub.com/wp-content/uploads/2020/11/google-pixel-4a.jpg'
         }
     }
   
