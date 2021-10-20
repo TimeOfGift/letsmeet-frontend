@@ -1,15 +1,12 @@
-import React, {useState} from 'react';
-import EventDetails from './components/EventDetails';
-import Events from './components/EventObj'
-import './App.scss';
+import "./App.scss";
+import Routes from './Routes'
+
 
 function App() {
-  const [events, setEvent] = useState(Events);
-
 
   return (
     <div className="App">
-      <EventDetails event={events}/>
+      <Routes />
     </div>
   );
 }
