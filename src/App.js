@@ -1,10 +1,11 @@
 import "./App.scss";
-import LandingPage from "./pages/LandindPage";
+import Routes from './Routes'
+
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <Routes />
     </div>
   );
 }
