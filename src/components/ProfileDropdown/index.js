@@ -2,9 +2,12 @@ import React from "react";
 import "./profileDropdown.scss";
 
 
+
 const ProfileDropdown = ({userName}) =>{
-    return(
+
+return(
         <div className="profile_dropdown" >
+        
         <div className="user_image"></div>
         <p className="user_name">{userName}</p>
 
@@ -14,3 +17,6 @@ const ProfileDropdown = ({userName}) =>{
 
 
 export default ProfileDropdown;
+
+
+
