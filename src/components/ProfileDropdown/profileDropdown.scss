@@ -1,26 +1,68 @@
-.user_name{
-height: 24px;
-width: 124px;
-left: 1278px;
-top: 23px;
-border-radius: nullpx;
-font-family: Abel;
-font-size: 21px;
-font-style: normal;
-font-weight: 400;
-line-height: 27px;
-letter-spacing: 1px;
-text-align: center;
-color: rgba(204, 204, 204, 1);
+   .dropdown_header {
+    display: flex;
+    align-items: center;
+    
+    .user_image{
+    height: 40px;
+    width: 39.68006134033203px;
+    left: 1231px;
+    top: 14px;
+    border-radius: 0px;
+    background: rgba(196, 196, 196, 1);
+    }
+        
+    .dropdown_username{
+    height: 24px;
+    left: 1278px;
+    top: 23px;
+    border-radius: nullpx;
+    font-family: Abel;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgba(204, 204, 204, 1);
+    }
 }
 
-.user_image{
-height: 40px;
-width: 39.68006134033203px;
-left: 1231px;
-top: 14px;
-border-radius: 0px;
-background: rgba(196, 196, 196, 1);
-background-image: url('./user_image.jpg');
+.dropdown_menu{
+    height: 146px;
+    width: 169px;
+    left: 1271px;
+    top: 68px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .dropdown_item{
+    font-family: Abel;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgba(204, 204, 204, 1);
+    }
 
-}
+    .divider{
+    height: 0px;
+    width: 143.35862731933594px;
+    left: 1283.82px;
+    top: 141px;
+    border-radius: nullpx;
+    border: 1px solid rgba(222, 222, 222, 1);
+    justify-content: center;
+    }
+  }
+
+
+
+
+
+
