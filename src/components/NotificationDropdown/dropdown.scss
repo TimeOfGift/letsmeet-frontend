@@ -1,0 +1,68 @@
+.main {
+    position: relative;
+    height: auto;
+
+    .dd_icon {
+        cursor: pointer;
+        position: absolute;
+        right: 17em;
+        top: 20px;
+    }
+
+    .dd_wraapper {
+        width: 21.19em;
+        height: 2.5em;
+        text-align: center;
+        position: absolute;
+        right: 1px;
+        top: 71px;
+        justify-content: space-between;
+        padding: .15em .5em;
+        transition: 0.3s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+        .dd_flex {
+            height: auto;
+            display: flex;
+            height: 14px;
+
+            .dd_img_wrapper {
+                width: 29px;
+                height: 32px;
+                padding: 3px;
+                border: none;
+
+                .dd_img {
+                    width: 31px;
+                    height: 34px;
+                    border: none;
+                    border-radius: 100px;
+                }
+            }
+        }
+
+        .ddtxt_content {
+            display: contents;
+            justify-content: space-between;
+
+            .ddtxt {
+                font-size: 12px;
+                font-family: Abel;
+                margin: 5px;
+            }
+
+            ._txt {
+                color: #CCCCCC;
+
+            }
+        }
+
+        .time {
+            font-size: 10px;
+            padding: 6px 10px;
+            float: right;
+            color: #CCCCCC;
+        }
+
+    }
+}
