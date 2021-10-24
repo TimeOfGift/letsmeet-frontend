@@ -1,0 +1,59 @@
+ 
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+ }
+
+.background-image{
+   background: 
+   linear-gradient(
+     rgba(0, 0, 0, 0.6),
+     rgba(0, 0, 0, 0.6)
+   ),
+    url(../../images/manypeople.jpg);
+   background-size: cover;
+   height: 100vh;
+    // opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     padding-top: 50px;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+}
+
+.firstParagraph{
+    filter: brightness(150%);
+    font-size: 48px;
+    font-style: inherit;
+    font-family: inherit;
+    color: white;
+    margin-top: - 60px;
+}
+
+.landingPagebutton{
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.secondParagraph{
+    font-size: 31px;
+    color: white;
+    margin-top: 30px;
+    
+}
+
+.thirdParagraph{
+    font-size: 18px;
+    color: white;
+}
+
+span{
+    color: yellow;
+}

@@ -1,3 +1,0 @@
-const greetings = () => {
-    return 'Hello';
-}
