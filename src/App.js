@@ -1,10 +1,13 @@
+import React from 'react'
 import "./App.scss";
-import LandingPage from "./pages/LandindPage";
+import InterestButton from "./components/InterestButton/interestButton"
 
 function App() {
+
+
   return (
     <div className="App">
-      <LandingPage />
+     <InterestButton />
     </div>
   );
 }
