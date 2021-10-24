@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+#bb{
+    font-size: 30px;
+    color: black;
+}
+.aa{
+    height: 500px;
+    width: 500px;
+    border: 2px solid brown;
+}
+
+.headButton{
+     background-color: white; 
+     margin-top: 20px; 
+     padding: 0;
+     width: 90px;
+     font-size: 30px;
+}
+
+.modal-body{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.fa{
+    font-size:24px;
+}
+.firstButton{
+    background-color: white;
+    color: blue;
+     width: 100px;
+    border-radius: 2px;
+    position: relative;
+    top: 255px;
+    left: 460px;
+    border: 1px solid #3359DB;
+    box-sizing: border-box;
+
+    &:hover{
+    color: white;
+    background-color: blue;
+    }
+}
+
+.secondButton{ 
+     background-color: white;
+     color: blue;
+     width: 100px;
+     border-radius: 2px;
+     position: relative;
+     top: 255px;
+     left: 490px;
+     border: 1px solid #3359DB;
+     box-sizing: border-box;
+     
+     &:hover{
+     color: white;
+     background-color: blue;
+     }
+}
+.modal-content {
+    position: absolute;
+    width: 722px;
+    height: 316px;
+    background-color: white;
+    position: relative;
+    top: 200px;
+    left: 430px;
+}
