@@ -1,0 +1,101 @@
+.eventtitles {
+  font-family: Abel;
+
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+
+
+  .topics {
+
+    .to {
+      font-size: 40px;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      color: #000000;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      color: #797979;
+    }
+
+    .btnrsvp {
+      width: 146.89px;
+      height: 40.99px;
+      background: #ffa500;
+      border-radius: 5px;
+      font-family: "DIN Pro";
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      color: #ffffff;
+      border: none;
+      margin-top: 7px;
+    }
+  }
+
+  .location {
+    .loc {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      letter-spacing: 1px;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #000000;
+    }
+
+    .street {
+      font-family: "Abel";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin-top: 8px;
+      color: #797979;
+    }
+
+  }
+
+
+
+  .datetime {
+    h6 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      letter-spacing: 1px;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #000000;
+    }
+
+    .date {
+      font-family: "Abel";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin-top: 8px;
+      color: #797979;
+    }
+
+    .time {
+      font-family: "Abel";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin-top: 10px;
+      color: #797979;
+    }
+  }
+}
