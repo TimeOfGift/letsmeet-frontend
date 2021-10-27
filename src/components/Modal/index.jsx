@@ -18,8 +18,10 @@ const Modal = () => {
             {!modal ? <Button handleClick={showModal} className="headButton" text="&#128393;"/> :
                <div onClick={showModal} className='modal-body'>
                <div onClick={preventOnClick} className="modal-content">
+                   <div className="button-div">
                    <Button handleClick={showModal} className=" firstButton" text="Cancel"/>
                    <Button handleClick={showModal} className="secondButton" text="Confirm" />
+                   </div>
                 </div>                  
                </div>
         }

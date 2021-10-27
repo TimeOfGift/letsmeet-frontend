@@ -4,15 +4,16 @@
     box-sizing: border-box;
 }
  
-#bb{
-    font-size: 30px;
-    color: black;
-}
-.aa{
-    height: 500px;
-    width: 500px;
-    border: 2px solid brown;
-}
+// #bb{
+//     font-size: 30px;
+//     color: black;
+    
+//}
+// .aa{
+//     height: 500px;
+//     width: 500px;
+//     border: 2px solid brown;
+// }
 
 .headButton{
      background-color: white; 
@@ -21,12 +22,20 @@
      width: 90px;
      font-size: 30px;
 }
-
+.button-div{
+    display: inline-flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+   width: 100%;
+    margin-top: 270px;
+}
 .modal-body{
     background: rgba(0, 0, 0, 0.5);
     height: 100vh;
     width: 100%;
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .fa{
     font-size:24px;
@@ -34,14 +43,11 @@
 .firstButton{
     background-color: white;
     color: blue;
-     width: 100px;
+    width: 100px;
     border-radius: 2px;
-    position: relative;
-    top: 255px;
-    left: 460px;
     border: 1px solid #3359DB;
     box-sizing: border-box;
-
+    margin-right: 5px;
     &:hover{
     color: white;
     background-color: blue;
@@ -53,11 +59,9 @@
      color: blue;
      width: 100px;
      border-radius: 2px;
-     position: relative;
-     top: 255px;
-     left: 490px;
      border: 1px solid #3359DB;
      box-sizing: border-box;
+     margin-right: 5px;
      
      &:hover{
      color: white;
@@ -65,11 +69,9 @@
      }
 }
 .modal-content {
-    position: absolute;
     width: 722px;
     height: 316px;
     background-color: white;
-    position: relative;
     top: 200px;
     left: 430px;
 }
