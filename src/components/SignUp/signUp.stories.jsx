@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {component} from 'react';
 import SignUp from './index';
 
 export default {
