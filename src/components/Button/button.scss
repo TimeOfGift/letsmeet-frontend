@@ -1,11 +1,11 @@
 .generalBtn {
-    padding: 10px 25px;
+    padding: 12px 40px;
     color: #000000;
     background-color: #ffa300;
     border: none;
-    border-radius: 15px;
-    width: 200px;
     cursor: pointer;
+    margin-top: 10px;
+
     &:hover{
        opacity: .9;
     }
