@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Button from '../Button/index'
 import './modal.scss'
 
-const Modal = () => {
+const Modal = ({confirmBtnText}) => {
  const [modal, setModal] = useState(false);
 
  const showModal = () => { 
@@ -20,7 +20,7 @@ const Modal = () => {
                <div onClick={preventOnClick} className="modal-content">
                    <div className="button-div">
                    <Button handleClick={showModal} className=" firstButton" text="Cancel"/>
-                   <Button handleClick={showModal} className="secondButton" text="Confirm" />
+                   <Button handleClick={showModal} className="secondButton" text={confirmBtnText || "Confirm"} />
                    </div>
                 </div>                  
                </div>
