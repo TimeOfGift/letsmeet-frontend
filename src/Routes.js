@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import Modal from './components/Modal'
 import Home from "./pages/Home/LandindPage";
 
 
@@ -9,7 +9,7 @@ const Routes = () => {
     <Router>
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Modal />
         </Route>
       </Switch>
     </Router >
