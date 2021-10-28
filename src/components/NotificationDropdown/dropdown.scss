@@ -4,45 +4,39 @@
 
     .dd_icon {
         cursor: pointer;
-        position: absolute;
-        right: 17em;
-        top: 20px;
     }
 
     .dd_wraapper {
-        width: 21.19em;
-        height: 2.5em;
-        text-align: center;
+        width: 348px;
         position: absolute;
-        right: 1px;
-        top: 71px;
+        left: 0px;
+        top: 40px;
         justify-content: space-between;
-        padding: .15em .5em;
         transition: 0.3s;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
         .dd_flex {
+            width: 100%;
             height: auto;
             display: flex;
-            height: 14px;
 
-            .dd_img_wrapper {
+            .dd_img_wrapper,
+            .dd_img {
                 width: 29px;
                 height: 32px;
                 padding: 3px;
                 border: none;
+                border-radius: 100px;
 
-                .dd_img {
-                    width: 31px;
-                    height: 34px;
-                    border: none;
-                    border-radius: 100px;
-                }
             }
-        }
-
+            }
+.dd_content {
+    width: 100%;
+    display: block;
+    height: auto;
         .ddtxt_content {
-            display: contents;
+            display: flex;
+            margin-top: 0px;
             justify-content: space-between;
 
             .ddtxt {
@@ -63,6 +57,7 @@
             float: right;
             color: #CCCCCC;
         }
+    }
 
     }
 }

@@ -1,7 +1,35 @@
 import React, { useState } from "react";
 import "./dropdown.scss";
 
-export default function Dropdown({ img, name, details, eventTitle, time }) {
+const notification = [
+  {
+    id: 1,
+    img:
+      "https://cdn.pixabay.com/photo/2014/04/02/10/25/man-303792_960_720.png",
+    name: "Deborah Oni",
+    details: "just created a new event on",
+    eventTitle: "Live Jam Group",
+    time: "2 mins ago",
+  },
+  {
+    id: 2,
+    img: "https://randomuser.me/api/portraits/men/11.jpg",
+    name: "Deborah Oni",
+    details: "just created a new event on",
+    eventTitle: "Live Jam Group",
+    time: "5 mins ago",
+  },
+  {
+    id: 3,
+    img: "https://randomuser.me/api/portraits/women/66.jpg",
+    name: "Deborah Oni",
+    details: "just created a new event on",
+    eventTitle: "Live Jam Group",
+    time: "8 mins ago",
+  },
+];
+
+export default function Dropdown() {
   const [isActive, setIsActive] = useState(false);
 
   const isToggled = () => {
@@ -27,21 +55,24 @@ export default function Dropdown({ img, name, details, eventTitle, time }) {
       </i>
       {isActive && (
         <div className="dd_wraapper">
-          <div className="dd_flex">
-            <div className="dd_img_wrapper">
-              <img
-                className="dd_img"
-                src={`https://cdn.pixabay.com/photo/2014/04/02/10/25/man-303792_960_720.png ${img}`}
-                alt="img"
-              />
-            </div>
-            <p className="ddtxt_content">
-              <span className="ddtxt">{name}</span>
-              <span className="ddtxt _txt">{details}</span>
-              <span className="ddtxt">{eventTitle}</span>
-            </p>
-          </div>
-          <span className="time">{time}</span>
+          {notification.map((el, id) => {
+            console.log(el);
+            return (
+              <div key={id} className="dd_flex">
+                <div className="dd_img_wrapper">
+                  <img className="dd_img" src={el.img} alt={el.nmae} />
+                </div>
+                <div className="dd_content">
+                  <div className="ddtxt_content">
+                    <span className="ddtxt">{el.name}</span>
+                    <span className="ddtxt _txt">{el.details}</span>
+                    <span className="ddtxt">{el.eventTitle}</span>
+                  </div>
+                  <span className="time">{el.time}</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
       )}
     </div>
