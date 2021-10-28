@@ -1,35 +1,26 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
- 
-// #bb{
-//     font-size: 30px;
-//     color: black;
-    
-//}
-// .aa{
-//     height: 500px;
-//     width: 500px;
-//     border: 2px solid brown;
-// }
 
-.headButton{
-     background-color: white; 
-     margin-top: 20px; 
-     padding: 0;
-     width: 90px;
-     font-size: 30px;
+.headButton {
+    background-color: white;
+    margin-top: 20px;
+    padding: 0;
+    width: 90px;
+    font-size: 30px;
 }
-.button-div{
+
+.button-div {
     display: inline-flex;
-   align-items: flex-end;
-   justify-content: flex-end;
-   width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
     margin-top: 270px;
 }
-.modal-body{
+
+.modal-body {
     background: rgba(0, 0, 0, 0.5);
     height: 100vh;
     width: 100%;
@@ -37,10 +28,12 @@
     justify-content: center;
     align-items: center;
 }
-.fa{
-    font-size:24px;
+
+.fa {
+    font-size: 24px;
 }
-.firstButton{
+
+.firstButton {
     background-color: white;
     color: blue;
     width: 100px;
@@ -48,30 +41,30 @@
     border: 1px solid #3359DB;
     box-sizing: border-box;
     margin-right: 5px;
-    &:hover{
-    color: white;
-    background-color: blue;
+
+    &:hover {
+        color: white;
+        background-color: blue;
     }
 }
 
-.secondButton{ 
-     background-color: white;
-     color: blue;
-     width: 100px;
-     border-radius: 2px;
-     border: 1px solid #3359DB;
-     box-sizing: border-box;
-     margin-right: 5px;
-     
-     &:hover{
-     color: white;
-     background-color: blue;
-     }
+.secondButton {
+    background-color: white;
+    color: blue;
+    width: 100px;
+    border-radius: 2px;
+    border: 1px solid #3359DB;
+    box-sizing: border-box;
+    margin-right: 5px;
+
+    &:hover {
+        color: white;
+        background-color: blue;
+    }
 }
+
 .modal-content {
     width: 722px;
-    height: 316px;
+    padding: 16px;
     background-color: white;
-    top: 200px;
-    left: 430px;
 }
