@@ -1,29 +1,25 @@
 .signup_page{
     background-color: #E8E8E8;
 
-& title{
-    height: 63.965484619140625px;
-    width: 264.85919189453125px;
-    font: Abel;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    letter-spacing: 1px;
-    color: rgba(1, 20, 154, 1);
+&_title{
     
+//    height: 63.965484619140625px;
+//    width: 264.85919189453125px;
+
 }
 
 .signup_rectangle{
-    height: 18.765182495117188px;
-    width: 124.42487335205078px;
     background-color: #FFA500CC;
+    // height: 18.765182495117188px;
+    // width: 124.42487335205078px;
 
-    
 }
 
 .signup_cover{
-width: 716.011474609375px;
+width: 700px;
 border-radius: 5px;
 background-color: #FFFFFF;
+height: 800px;
+
 }
 }

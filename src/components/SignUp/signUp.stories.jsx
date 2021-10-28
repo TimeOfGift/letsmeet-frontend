@@ -4,13 +4,13 @@ import SignUp from './index';
 export default {
     title: 'Event Meet/SignUp Page',
     component: SignUp,
-    details : {
+    args : {
         text : 'Sign Up', 
         textColor: 'black',
         rectWidth: '100px',
-        rectColor: 'yellow',
+        rectColor: 'green',
         
     }
 }
 
-export const Every = (details) => <SignUp {...details} />
+export const Every = (args) => <SignUp {...args} />
