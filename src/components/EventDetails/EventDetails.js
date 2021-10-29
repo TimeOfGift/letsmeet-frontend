@@ -15,11 +15,10 @@ const EventDetails = ({event}) => {
                     <p id="attend">Tags</p>
                     <p>{event.tags}</p>
                 </div>
-                <div className="img-div"><img src={event.img}/></div>
+                <div className="img-div"><img className='event-img' src={event.img} alt='event'/></div>
             </div>
         </div>
     );
-
 }
 
 export default EventDetails;
