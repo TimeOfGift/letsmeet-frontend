@@ -1,75 +1,48 @@
 .cancel-div{
-    position: absolute;
-    width: 177px;
-    height: 66px;
-    display: flex;
+    
+    align-items: center;
+    display: inline-flex;
     background: #FFFFFF;
     justify-content: space-around;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 23px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
     border-radius: 51px;
+    padding: 0 12px;
 }
 
-.cancel-svg-icon{
-    position: relative;
-    top: 10px;
-    left: 12px;
-    padding-left: 9px;
+.cancel-svg-icon{    
     cursor: pointer;
 }
 
 #cancel-text{
     cursor: default;
-    position: relative;
-    width: 38px;
-    height: 28px;
     text-align: center;
-    font-family: Abel;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
-    bottom: 8px;
-    right: 5px;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    color: black;
+    margin-right: 14px;
 }
 
 .confirm-div{
-    width: 177px;  
-    border: 1px solid #C4C4C4;
-    height: 66px;
-    box-sizing: border-box;
-    border-radius: 51px;
-    display: flex;
-    padding: 10px;
+    align-items: center;
+    display: inline-flex;
+    background: #FFFFFF;
     justify-content: space-around;
-    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 51px;
+    padding: 0 12px;
 }
 .confirm-svg-icon{
-    position: relative;
-    left: 14px;
-    top: 7px;
-    padding-left: 9px;
-    cursor: pointer;
+       cursor: pointer;
+       margin-right: 3px;
 }
 #confirm-text{
-    cursor: default;
-    position: relative;
-    width: 38px;
-    height: 28px;
+    cursor: default;  
     font-family: Abel;
     font-style: normal;
     font-weight: normal;
+    margin-right: 16px;
     font-size: 22px;
-    bottom: 17px;
-    right: 11px;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    color: black;
 }
 
 
