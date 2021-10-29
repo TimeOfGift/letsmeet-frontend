@@ -12,7 +12,7 @@
         left: 0px;
         top: 40px;
         justify-content: space-between;
-        transition: 0.3s;
+        padding: 22px 7px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
         .dd_flex {
@@ -29,35 +29,37 @@
                 border-radius: 100px;
 
             }
-            }
-.dd_content {
-    width: 100%;
-    display: block;
-    height: auto;
-        .ddtxt_content {
-            display: flex;
-            margin-top: 0px;
-            justify-content: space-between;
+        }
 
-            .ddtxt {
-                font-size: 12px;
-                font-family: Abel;
-                margin: 5px;
+        .dd_content {
+            width: 100%;
+            display: block;
+            height: auto;
+
+            .ddtxt_content {
+                display: flex;
+                margin-top: 0px;
+                justify-content: space-between;
+
+                .ddtxt {
+                    font-size: 12px;
+                    font-family: Abel;
+                    margin: 5px;
+                }
+
+                ._txt {
+                    color: #CCCCCC;
+
+                }
             }
 
-            ._txt {
+            .time {
+                font-size: 10px;
+                padding: 6px 10px;
+                float: right;
                 color: #CCCCCC;
-
             }
         }
-
-        .time {
-            font-size: 10px;
-            padding: 6px 10px;
-            float: right;
-            color: #CCCCCC;
-        }
-    }
 
     }
 }
