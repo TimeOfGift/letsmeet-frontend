@@ -1,0 +1,19 @@
+.top-nav {
+  height: 70px;
+  position: fixed;
+  top: 0;
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    .logo {
+      // margin-right: 2px;
+      height: 50px;
+    }
+    span{
+      margin-top: 7px;
+    }
+  }
+
+
+}
