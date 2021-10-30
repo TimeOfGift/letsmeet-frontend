@@ -1,5 +1,5 @@
-.cancel-div{
-    
+.interest-btn {
+
     align-items: center;
     display: inline-flex;
     background: #FFFFFF;
@@ -7,48 +7,16 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 23px rgba(0, 0, 0, 0.1);
     border-radius: 51px;
-    padding: 0 12px;
+    padding: 10px 12px;
+    height: 66px;
+
+
+    .text {
+        cursor: pointer;
+        font-family: Abel;
+        font-style: normal;
+        font-weight: normal;
+        margin-right: 16px;
+        font-size: 22px;
+    }
 }
-
-.cancel-svg-icon{    
-    cursor: pointer;
-}
-
-#cancel-text{
-    cursor: default;
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    margin-right: 14px;
-}
-
-.confirm-div{
-    align-items: center;
-    display: inline-flex;
-    background: #FFFFFF;
-    justify-content: space-around;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 51px;
-    padding: 0 12px;
-}
-.confirm-svg-icon{
-       cursor: pointer;
-       margin-right: 3px;
-}
-#confirm-text{
-    cursor: default;  
-    font-family: Abel;
-    font-style: normal;
-    font-weight: normal;
-    margin-right: 16px;
-    font-size: 22px;
-}
-
-
-
-
-
-
-
-

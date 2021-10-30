@@ -6,7 +6,8 @@ export default {
   component: InterestButton,
   args: {
     text: "Swimming",
-    handleClick: () => console.log("toggle()"),
+    handleClick: () => true,
+    previousInterest: true
   },
 };
 
