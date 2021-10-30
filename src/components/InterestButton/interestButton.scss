@@ -1,0 +1,22 @@
+.interest-btn {
+
+    align-items: center;
+    display: inline-flex;
+    background: #FFFFFF;
+    justify-content: space-around;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 23px rgba(0, 0, 0, 0.1);
+    border-radius: 51px;
+    padding: 10px 12px;
+    height: 66px;
+
+
+    .text {
+        cursor: pointer;
+        font-family: Abel;
+        font-style: normal;
+        font-weight: normal;
+        margin-right: 16px;
+        font-size: 22px;
+    }
+}
