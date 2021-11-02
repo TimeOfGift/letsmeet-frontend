@@ -1,0 +1,25 @@
+.border-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#attend {
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+#attendant-name {
+    font-weight: normal;
+}
+
+.event-description {
+    width: 50%;
+}
+
+.img-div {
+    height: 300px;
+}
+
+.event-img {
+    object-fit: cover;
+}
