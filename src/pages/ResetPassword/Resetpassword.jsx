@@ -1,16 +1,16 @@
-import react, { useState } from 'react'
-import './resetpassword.scss'
+import React, { useState } from 'react'
+import './Resetpassword.scss'
 
 const Resetpassword = () => {
 
     const [password,setPassword] = useState("")
 
-    const onChange = (e) =>{
+    const handleChange = (e) =>{
       setPassword([e.target.password],e.target.value)
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+       e.preventDefault();
         
     }
 
@@ -27,10 +27,10 @@ const Resetpassword = () => {
                 </div>
                 <div className="emailadress">
                     <input type="text" placeholder="Password" className="passwordinput" value={password}
-                        onChange={(e) => setPassword(e.target.value)} />
+                        onChange={handleChange} />
                 </div>
                 <div className="buttondiv">
-                    <button onClick={handleSubmit} className="corebutton">Reset password</button>
+                    <button onClick={handleSubmit} className="corebutton" text="">Reset password</button>
                 </div>
 
                 </div>
