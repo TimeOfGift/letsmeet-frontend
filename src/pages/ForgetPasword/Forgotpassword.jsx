@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import './Forgotpassword.scss'
+import Button from '../../components/Button'
+
 
 const Forgotpassword = () => {
 
     const [email, setEmail] = useState("")
 
-    const onChange = (e) =>{
-         setEmail([e.target.email],e.target.value)
-     }
+    // // const onChange = (e) =>{
+    // //      setEmail([e.target.email],e.target.value)
+    //  }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -30,7 +32,7 @@ const Forgotpassword = () => {
                         onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <div className="buttondiv">
-                    <button onSubmit={handleSubmit} className="corebutton">submit</button>
+                    <Button className="corebutton" text="Submit" handleClick={handleSubmit}></Button>
                 </div>
 
 
