@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Resetpassword.scss'
 
+
 const Resetpassword = () => {
 
     const [password,setPassword] = useState("")
@@ -25,7 +26,7 @@ const Resetpassword = () => {
                 <div className="secondparagraph">
                     <p className="passwordentry" > Enter new password</p>
                 </div>
-                <div className="emailadress">
+                <div>
                     <input type="text" placeholder="Password" className="passwordinput" value={password}
                         onChange={handleChange} />
                 </div>
