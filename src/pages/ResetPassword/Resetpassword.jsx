@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Resetpassword.scss'
+import Button from "./../../components/Button"
 
 
 const Resetpassword = () => {
@@ -31,7 +32,7 @@ const Resetpassword = () => {
                         onChange={handleChange} />
                 </div>
                 <div className="buttondiv">
-                    <button onClick={handleSubmit} className="corebutton" text="">Reset password</button>
+                    <Button className="corebutton" text="Reset Password" handleClick={handleSubmit}></Button>
                 </div>
 
                 </div>
@@ -41,4 +42,4 @@ const Resetpassword = () => {
     )
 
 }
-export default Resetpassword
+export default Resetpassword;
