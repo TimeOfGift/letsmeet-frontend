@@ -2,8 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-
+    margin-top: 100px;
 
     .signup_cover {
         border-radius: 20px;
@@ -90,16 +89,18 @@
             padding: 15px;
         }
 
-        
-            .signup_button {
-                width: 100%;
-                border-radius: 6px;
-                border: none;
-                text-justify: center;
-                font-size: 18px;
-                font-weight: bolder
-            }
-        
+
+        .signup_button {
+            width: 100%;
+            border-radius: 6px;
+            border: none;
+            text-justify: center;
+            font-size: 18px;
+            font-weight: bolder;
+            margin-top: 32px;
+
+    }
+
 
     }
 }

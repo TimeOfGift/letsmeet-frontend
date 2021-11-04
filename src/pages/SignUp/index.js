@@ -15,17 +15,17 @@ const SignUp = () => {
                 </div>
                     <FormTitle text='Sign up' textColor='black' rectColor='orange' />
                 <div className="username/email">
-                    <p className="username_and_email_header">Enter your username or email address</p>
-                    <input placeholder="Username or email address" className="username_or_email" />
+                    <p className="username_and_email_header">Enter email address</p>
+                    <input placeholder="youremail@gmail.com" className="username_or_email" />
                 </div>
                 <div className="username_and_contact">
                     <div className="username">
                         <p className="user_name_header">Username</p>
-                        <input placeholder="User name" className="user_name" />
+                        <input placeholder="Username" className="user_name" />
                     </div>
                     <div className="Contact_Number">
                         <p className="contact__number_header">Contact Number</p>
-                        <input placeholder="Contact_number" className="contact_number" />
+                        <input placeholder="08111111111" className="contact_number" />
                     </div>
                 </div>
                 <div className="Password">
