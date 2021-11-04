@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./profileDropdown.scss";
 
 const ProfileDropdown = ({ userName, imgUrl }) => {
@@ -8,10 +8,25 @@ const ProfileDropdown = ({ userName, imgUrl }) => {
 
   const showList = () => setShowmenu(!showMenu);
 
+  const userRef = useRef()
+  function handleClickOutside(event) {
+    if (!userRef?.current?.contains(event.target)) {
+      setShowmenu(false)
+    }
+  }
+    useEffect(() => {
+      
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [userRef]);
+  
+
 
   
   return (
-    <div className="dropdown" >
+    <div className="dropdown" ref={userRef} >
       <div className="dropdown_header" 
       onClick={showList}
        onMouseEnter={() => setColor('orange')}

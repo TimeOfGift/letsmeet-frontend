@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./dropdown.scss";
 
 
@@ -8,8 +8,23 @@ import "./dropdown.scss";
     const isToggled = () => {
       setIsActive(!isActive);
     };
+
+    const userRef = useRef(null)
+    function handleClickOutside(event) {
+      if (!userRef?.current?.contains(event.target)) {
+        setIsActive(false)
+      }
+    }
+    useEffect(() => {
+
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [userRef]);
+
     return (
-      <div className="main">
+      <div className="notificaton-bell" ref={userRef}>
         <i className="dd_icon" onClick={isToggled}>
           <svg
             width="27"

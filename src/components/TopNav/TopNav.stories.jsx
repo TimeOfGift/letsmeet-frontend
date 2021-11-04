@@ -6,4 +6,8 @@ export default {
   
 };
 
-export const All = (args) => <TopNav {...args} />;
+export const All = (args) => (
+  <div style={{height: '100vh', background: 'grey', width: '100vw'}}>
+    <TopNav {...args} />
+  </div>
+);

@@ -1,4 +1,4 @@
-.main {
+.notificaton-bell {
     position: relative;
     height: auto;
 
@@ -9,11 +9,13 @@
     .dd_wraapper {
         width: 348px;
         position: absolute;
-        left: 0px;
+        right: -80px;
         top: 40px;
         justify-content: space-between;
+        background: white;
         padding: 22px 7px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+       z-index: 1;
 
         .dd_flex {
             width: 100%;
