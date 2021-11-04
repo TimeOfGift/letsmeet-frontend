@@ -1,113 +1,105 @@
-.signup_page{
+.signup_page {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-.signup_cover{
-border-radius: 20px;
-font-weight: 500;
-padding-right: 30px;
-padding-left: 30px;
-width: 480px;
-background: #FFFFFF;
+    height: 100vh;
 
-.account_login{
-position: relative;
-padding-bottom: 81px;
 
-.confirm_account{
-width: 158.95721435546875px;
-color: #8D8D8D;
-left: 288px;
-top: 30px;
-position: absolute;
-}
+    .signup_cover {
+        border-radius: 20px;
+        font-weight: 500;
+        padding: 40px 30px;
+        width: 480px;
+        background: #FFFFFF;
 
-.account_signin{
-width: 54.11279296875px;
-color: #B87514;
-position: absolute;
-left: 287px;
-top: 50px;
-}
-}
-.username_and_email_header{
-width: 401.43804931640625px;
-padding-top: 10px;
-padding-bottom: 7px;
-}
+        .account_login {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-end;
 
-.username_or_email{
-height: 37px;
-width: 400px;
-border-radius: 6px;
-background: #FFFFFF;
-border: 1px solid #4285F4;
-text-align: left;
-padding-left: 15px;
-}
+            .confirm_account {
+                color: #8D8D8D;
+            }
 
-.username_and_contact{
-display: flex;
-justify-content: space-between;
-padding-top: 20px;
+            .account_signin {
+                width: 54.11279296875px;
+                color: #B87514;
+                cursor: pointer;
+                text-decoration: none;
 
-.user_name_header{
-width: 112.4005355834961px;
+            }
+        }
+
+        .username_and_email_header {
+            width: 401.43804931640625px;
+            padding-top: 10px;
+            padding-bottom: 7px;
+        }
+
+        .username_or_email {
+            width: 100%;
+            border-radius: 6px;
+            background: #FFFFFF;
+            border: 1px solid #4285F4;
+            text-align: left;
+            padding: 15px;
+        }
+
+        .username_and_contact {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+
+            .user_name_header {
+                width: 112.4005355834961px;
+
+            }
+
+            .Contact_Number {
+                padding-right: 20px;
+
+                .contact_number_header {
+                    width: 176.60772705078125px;
+
+                }
+            }
+
+            .user_name,
+            .contact_number {
+                width: 190px;
+                border-radius: 6px;
+                border: 1px solid #ADADAD;
+                text-align: left;
+                padding: 15px;
+            }
+        }
+
+        .password_header {
+            width: 401.43804931640625px;
+            padding-top: 20px;
+            padding-bottom: 7px;
+        }
+
+        .password {
+            width: 100%;
+            border-radius: 6px;
+            background: #FFFFFF;
+            border: 1px solid #ADADAD;
+            text-align: left;
+            padding: 15px;
+        }
+
         
-}
-  
-.Contact_Number{
-padding-right: 20px;
+            .signup_button {
+                width: 100%;
+                border-radius: 6px;
+                border: none;
+                text-justify: center;
+                font-size: 18px;
+                font-weight: bolder
+            }
+        
 
-.contact_number_header{
-width: 176.60772705078125px;
-    
- }
-}
-
-.user_name,
-.contact_number{
-width: 190px;
-height: 37px;
-border-radius: 6px;
-border: 1px solid #ADADAD;
-text-align: left;
-padding-left: 15px;
-}
-}
-
-.password_header{
-width: 401.43804931640625px;
-padding-top: 20px;
-padding-bottom: 7px;
-}
-
-.password{
-height: 37px;
-width: 400px;
-border-radius: 6px;
-background: #FFFFFF;
-border: 1px solid #ADADAD;
-text-align: left;
-padding-left: 15px;
-}
-
-.signUp_button{
-padding-top: 40px;
-padding-bottom: 50px;
-
-.signup_button{
-height: 37px;
-width: 400px;
-border-radius: 6px; 
-border: none;
-background: #FFA500;
-text-align: center;
-text-justify: center;
-font-weight: 600;
- }
-}
-
-}
+    }
 }
