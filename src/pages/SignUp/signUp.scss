@@ -1,0 +1,105 @@
+.signup_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+    .signup_cover {
+        border-radius: 20px;
+        font-weight: 500;
+        padding: 40px 30px;
+        width: 480px;
+        background: #FFFFFF;
+
+        .account_login {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .confirm_account {
+                color: #8D8D8D;
+            }
+
+            .account_signin {
+                width: 54.11279296875px;
+                color: #B87514;
+                cursor: pointer;
+                text-decoration: none;
+
+            }
+        }
+
+        .username_and_email_header {
+            width: 401.43804931640625px;
+            padding-top: 10px;
+            padding-bottom: 7px;
+        }
+
+        .username_or_email {
+            width: 100%;
+            border-radius: 6px;
+            background: #FFFFFF;
+            border: 1px solid #4285F4;
+            text-align: left;
+            padding: 15px;
+        }
+
+        .username_and_contact {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+
+            .user_name_header {
+                width: 112.4005355834961px;
+
+            }
+
+            .Contact_Number {
+                padding-right: 20px;
+
+                .contact_number_header {
+                    width: 176.60772705078125px;
+
+                }
+            }
+
+            .user_name,
+            .contact_number {
+                width: 190px;
+                border-radius: 6px;
+                border: 1px solid #ADADAD;
+                text-align: left;
+                padding: 15px;
+            }
+        }
+
+        .password_header {
+            width: 401.43804931640625px;
+            padding-top: 20px;
+            padding-bottom: 7px;
+        }
+
+        .password {
+            width: 100%;
+            border-radius: 6px;
+            background: #FFFFFF;
+            border: 1px solid #ADADAD;
+            text-align: left;
+            padding: 15px;
+        }
+
+        
+            .signup_button {
+                width: 100%;
+                border-radius: 6px;
+                border: none;
+                text-justify: center;
+                font-size: 18px;
+                font-weight: bolder
+            }
+        
+
+    }
+}

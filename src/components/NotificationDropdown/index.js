@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./dropdown.scss";
 
-
   const NotificationDropdown = ({ notifications }) => {
     const [isActive, setIsActive] = useState(false);
 
