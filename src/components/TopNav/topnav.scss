@@ -1,18 +1,36 @@
 .top-nav {
   height: 70px;
-  position: fixed;
   top: 0;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  padding-right: 40px;
 
   .logo-wrapper {
     display: flex;
     align-items: center;
+
     .logo {
       height: 50px;
     }
-    span{
+
+    span {
       margin-top: 7px;
+      font-family: 'Anton', sans-serif;
+      color: #8d5f0ae3;
+  font-size: 25px;
     }
   }
 
+  .user-notification {
+    display: flex;
+    align-items: center;
 
+    .notificaton-bell {
+      margin-right: 40px;
+    }
+  }
 }
