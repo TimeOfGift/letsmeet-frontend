@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './Forgotpassword.scss'
 import Button from '../../components/Button'
+import FormTitle from '../../components/FormTitle'
+
 
 
 const Forgotpassword = () => {
@@ -21,7 +23,7 @@ const Forgotpassword = () => {
         <div className="containerhouse">
             <div className="maincontainer">
                 <div className='firstparagraph'>
-                    <p className="forgotpassword">Forgot Passwords</p>
+                    <FormTitle className="" text="Forgot Password" />
                 </div>
                 <hr className="figma"></hr>
                 <div className="secondparagraph">
