@@ -9,9 +9,9 @@ const Forgotpassword = () => {
 
     const [email, setEmail] = useState("")
 
-    // // const onChange = (e) =>{
-    // //      setEmail([e.target.email],e.target.value)
-    //  }
+     const onChange = (e) =>{
+          setEmail(e.target.value)
+     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -19,11 +19,11 @@ const Forgotpassword = () => {
     }
 
     return (
-       <div>
+       <form handleClick={handleSubmit}>
         <div className="containerhouse">
             <div className="maincontainer">
                 <div className='firstparagraph'>
-                    <FormTitle className="" text="Forgot Password" rectColor="none"/>
+                    <FormTitle className="forgotpasswword" text="Forgot Password" rectColor="none"/>
                 </div>
                 <hr className="figma"></hr>
                 <div className="secondparagraph">
@@ -40,7 +40,7 @@ const Forgotpassword = () => {
 
             </div>
         </div>
-</div>
+</form>
 
     )
 
