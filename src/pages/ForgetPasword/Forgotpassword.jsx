@@ -19,7 +19,7 @@ const Forgotpassword = () => {
     }
 
     return (
-
+       <div>
         <div className="containerhouse">
             <div className="maincontainer">
                 <div className='firstparagraph'>
@@ -40,7 +40,7 @@ const Forgotpassword = () => {
 
             </div>
         </div>
-
+</div>
 
     )
 
