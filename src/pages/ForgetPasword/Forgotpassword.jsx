@@ -23,7 +23,7 @@ const Forgotpassword = () => {
         <div className="containerhouse">
             <div className="maincontainer">
                 <div className='firstparagraph'>
-                    <FormTitle className="" text="Forgot Password" />
+                    <FormTitle className="" text="Forgot Password" rectColor="none"/>
                 </div>
                 <hr className="figma"></hr>
                 <div className="secondparagraph">
