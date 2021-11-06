@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom'
+import Button from '../../components/Button';
 import "./signUp.scss";
 import FormTitle from '../../components/FormTitle'
 
@@ -6,14 +8,12 @@ import FormTitle from '../../components/FormTitle'
 const SignUp = () => {
     return (
         <div className="signup_page">
-            <div className="signup_cover">
+            <form className="signup_cover">
                 <div className="account_login">
                     <p className="confirm_account">Have an Account ?</p>
-                    <p className="account_signin">Sign in</p>
+                    <Link to={'/login'} className="account_signin">Sign in</Link>
                 </div>
-                <div className="signup_formtitle">
                     <FormTitle text='Sign up' textColor='black' rectColor='orange' />
-                </div>
                 <div className="username/email">
                     <p className="username_and_email_header">Enter your username or email address</p>
                     <input placeholder="Username or email address" className="username_or_email" />
@@ -29,13 +29,12 @@ const SignUp = () => {
                     </div>
                 </div>
                 <div className="Password">
-                    <p className="password_header">Enter your Password</p>
-                    <input placeholder="Password" className="password" />
+                    <p  className="password_header">Enter your Password</p>
+                    <input type='password' placeholder="Password" className="password" />
                 </div>
-                <div className="signUp_button">
-                    <button className="signup_button">sign up</button>
-                </div>
-            </div>
+                    <Button text="sign up" className="signup_button" />
+            
+            </form>
         </div>
     );
 }
