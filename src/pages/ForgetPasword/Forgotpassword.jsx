@@ -23,14 +23,14 @@ const Forgotpassword = () => {
         <div className="containerhouse">
             <div className="maincontainer">
                 <div className='firstparagraph'>
-                    <FormTitle className="forgotpasswword" text="Forgot Password" rectColor="none"/>
+                    <FormTitle className="" text="Forgot Password" rectColor="none"/>
                 </div>
                 <hr className="figma"></hr>
                 <div className="secondparagraph">
                     <p className="emailentry" >Enter your email address</p>
                 </div>
                 <div className="emailadress">
-                    <input type="text" placeholder="email address" className="emailinput" value={email}
+                    <input type="text" placeholder="Email address" className="emailinput" value={email}
                         onChange={handleChange} />
                 </div>
                 <div className="buttondiv">
