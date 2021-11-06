@@ -34,9 +34,6 @@ const Resetpassword = () => {
             </div>
         </div>
 
-
-
-
     )
 
 }
