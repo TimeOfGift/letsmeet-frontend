@@ -21,8 +21,7 @@ const Resetpassword = () => {
         <div handleClick={handleSubmit}>
             <div className="containerhouse">
                 <div className="maincontainer">
-                    <FormTitle className="resetpassword" text="Reset Password" rectColor="none" />
-                    <hr className="figma"></hr>
+                    <FormTitle className="resetpassword" text="Reset Password" rectColor=" #FFA500CC" />
                     <p className="passwordentry" > Enter new password</p>
                     <div>
                         <input type="password" placeholder="Password" className="passwordinput" value={password}
