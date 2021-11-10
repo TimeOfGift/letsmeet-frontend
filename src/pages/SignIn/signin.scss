@@ -1,0 +1,119 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #E8E8E8;
+}
+h1{
+    width: 274px;
+    height: 58px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 82px;
+    text-transform: uppercase;
+}
+hr{
+    width: 124.42px;
+    height: 18.77px;
+    background: rgba(255, 165, 0, 0.8);
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+.signin-container{
+    display: inline-flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 35%;
+    height: 75%;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+}
+.label{
+    display: flex;
+    flex-flow: column;
+    height: 80px;
+    justify-content: space-between;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 10px;
+}
+.signup-div{
+    display: flex;
+    width: 100%;
+}
+
+.signup{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+#signup{
+    text-align: start;
+}
+.forget-password-div{
+    display: flex;
+    width: 100%;
+}
+.empty-div{
+    width: 50%;
+}
+#forget{
+    width: 50%;
+    text-align: end;
+    margin-top: 10px;
+}
+.signup{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+}
+
+input{
+    height: 51.31px;
+    border-radius: 6px;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #ADADAD;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #808080;
+    padding-left: 15px;
+    width: 100%;
+    background-color: white;
+}
+#show-and-hide{
+    border: none;
+    right: 40px;
+}
+.input-password{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    background: #FFFFFF;
+    border: 1px solid #ADADAD;
+    padding: 0;
+}
+
+.sign-btn{
+    border-radius: 6px;
+    font-size: 21px;
+    box-shadow: 0px 4px 19px rgba(119, 147, 65, 0.3);
+    border-radius: 10px;
+    width: 100%;
+}
+.show-icon-btn{
+    position: relative;
+    right: 20px;
+    bottom: 7px;
+    background: none;
+    padding: 0;
+    font-size: 23px; 
+}
