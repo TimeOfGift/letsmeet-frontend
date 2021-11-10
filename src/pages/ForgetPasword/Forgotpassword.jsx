@@ -1,5 +1,7 @@
 import react, { useState } from 'react'
 import './Forgotpassword.scss'
+import Button from '../../components/Button'
+
 
 const Forgotpassword = () => {
 
@@ -26,14 +28,12 @@ const Forgotpassword = () => {
                     <p className="emailentry" >Enter your email address</p>
                 </div>
                 <div className="emailadress">
-                    <input type="text" placeholder="email address" className="emailinput" value={email}
-                        onChange={(e) => setEmail(e.target.value)} />
+                     <input type="text" placeholder="email address" className="emailinput" value={email}
+                        onChange={(e) => setEmail(e.target.value)} /> 
                 </div>
                 <div className="buttondiv">
-                    <button onSubmit={handleSubmit} className="corebutton">submit</button>
+                    <Button className="corebutton" text="Submit"/>            
                 </div>
-
-
             </div>
         </div>
 
