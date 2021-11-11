@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Resetpassword.scss'
+import './resetpassword.scss'
 import Button from "./../../components/Button"
 import FormTitle from './../../components/FormTitle'
 
