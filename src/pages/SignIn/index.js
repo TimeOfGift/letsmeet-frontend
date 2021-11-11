@@ -27,10 +27,9 @@ const SignIn = () => {
                     <div className="empty-div"></div><div className="signup"><p>No Account?</p><p id="signup">Sign Up</p></div>
                 </div>
                 <div>
-                <FormTitle text="Login" rectColor="none" className="form-title" textColor="black"/>
-                <hr />
+                <FormTitle text="Login" rectColor="orange" textColor="black"/>
                 </div>
-                <form onSubmit={handleSubmit}>
+                <form  className="signin-form" onSubmit={handleSubmit}>
                 <label className="label">
                     Enter your username or email address
                     <input type="email" name="name" onChange={handleChange}/>

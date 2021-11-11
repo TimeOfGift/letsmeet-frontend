@@ -15,12 +15,9 @@
     line-height: 82px;
     text-transform: uppercase;
 }
-hr{
-    width: 124.42px;
-    height: 18.77px;
-    background: rgba(255, 165, 0, 0.8);
-    margin-top: 10px;
-    margin-left: 4px;
+
+.signin-form{
+    margin-bottom: 60px;
 }
 
 .signin-container{
@@ -28,8 +25,7 @@ hr{
     flex-flow: column;
     justify-content: space-around;
     width: 35%;
-    height: 75%;
-    padding: 30px;
+    padding: 10px 30px 0px;
     background: #FFFFFF;
     box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.08);
     border-radius: 40px;
