@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 import './landingPage.scss';
 import event from '../../images/event.png';
 import Button from '../../components/Button'
@@ -12,7 +12,9 @@ function LandingPage() {
                <p className='firstParagraph'>Get Closer to your <span> social</span> Meetup</p>
                <p className='secondParagraph'>Work hard play harder,exclusive VIP access to the best</p>
                <p className='secondParagraph'>events,parties and everything <span>FUN!!!</span></p>
+               <Link to= "/signup" className="sig">
                <Button text='Join the creed now!' className='landingPagebutton'/>
+               </Link>
 
           </div>
      );
