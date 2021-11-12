@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './forgetpassword.scss'
 import Button from '../../components/Button'
+import FormTitle from './../../components/FormTitle'
+
 
 
 const Forgetpassword = () => {
@@ -21,14 +23,14 @@ const Forgetpassword = () => {
         <div className="containerhouse">
             <div className="maincontainer">
                 <div className='firstparagraph'>
-                    <p className="forgotpassword">Forgot Passwords</p>
+                    <FormTitle  className="forgotpassword" text="Forgot Password" rectColor="#FFA500CC"/>
                 </div>
-                <hr className="figma"></hr>
+                
                 <div className="secondparagraph">
                     <p className="emailentry" >Enter your email address</p>
                 </div>
                 <div className="emailadress">
-                     <input type="text" placeholder="email address" className="emailinput" value={email}
+                     <input type="text" placeholder="Email address" className="emailinput" value={email}
                         onChange={handleChange} /> 
                 </div>
                 <div className="buttondiv">
