@@ -8,16 +8,16 @@ const Forgetpassword = () => {
     const [email, setEmail] = useState("")
 
     const handleChange = (e) =>{
-         setEmail([e.target.email],e.target.value)
+         setEmail(e.target.value)
      }
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     console.log('email')
-    // }
+     const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('email')
+     }
 
     return (
-
+           <form >
         <div className="containerhouse">
             <div className="maincontainer">
                 <div className='firstparagraph'>
@@ -37,7 +37,7 @@ const Forgetpassword = () => {
             </div>
         </div>
 
-
+        </form>
     )
 
 }
