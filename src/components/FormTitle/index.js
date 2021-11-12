@@ -12,9 +12,12 @@ const FormTitle = ({ text, textColor, rectWidth, rectColor }) => {
     );
 }
 
-FormTitle.proptypes = {
+FormTitle.propTypes = {
 
- stringProp : PropTypes.string,
+ text : PropTypes.string,
+ textColor : PropTypes.string,
+ rectWidth : PropTypes.string,
+ rectColor : PropTypes.string,
 
 }
 

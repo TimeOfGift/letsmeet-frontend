@@ -8,7 +8,7 @@ export default {
         text : 'Update Event', 
         textColor: 'blue',
         rectWidth: '100px',
-        rectColor: 'green'
+        rectColor: 'green',
     }
 }
 

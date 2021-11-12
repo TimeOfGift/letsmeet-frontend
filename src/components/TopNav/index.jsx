@@ -23,4 +23,4 @@ const TopNav = ({imgUrl}) => {
   );
 }
 
-export default TopNav
+export default TopNav;
