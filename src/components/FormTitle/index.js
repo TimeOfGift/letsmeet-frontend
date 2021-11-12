@@ -13,8 +13,7 @@ const FormTitle = ({ text, textColor, rectWidth, rectColor }) => {
 }
 
 FormTitle.propTypes = {
-
- text : PropTypes.string,
+ text : PropTypes.string.isRequired,
  textColor : PropTypes.string,
  rectWidth : PropTypes.string,
  rectColor : PropTypes.string,
