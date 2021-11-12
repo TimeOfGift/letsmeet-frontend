@@ -12,14 +12,14 @@ const Routes = () => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/signin">
-          <Signin />
-        </Route>
         <>
-          <TopNav/>
+        <TopNav/>
         <Route exact path="/signup">
           <SignUp />
         </Route>
+          <Route exact path="/login">
+            <Signin />
+          </Route>
         </>
       </Switch>
     </Router >
