@@ -18,7 +18,7 @@ const Resetpassword = () => {
     }
 
     return (
-        <div handleClick={handleSubmit}>
+        <div>
             <div className="containerhouse">
                 <div className="maincontainer">
                     <FormTitle className="resetpassword" text="Reset Password" rectColor=" #FFA500CC" />

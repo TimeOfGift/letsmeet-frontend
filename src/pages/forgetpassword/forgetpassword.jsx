@@ -11,10 +11,10 @@ const Forgetpassword = () => {
          setEmail([e.target.email],e.target.value)
      }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('email')
-    }
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log('email')
+    // }
 
     return (
 
