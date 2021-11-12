@@ -1,5 +1,6 @@
 import React from "react";
 import "./formTitle.scss";
+import PropTypes from 'prop-types';
 
 
 const FormTitle = ({ text, textColor, rectWidth, rectColor }) => {
@@ -10,5 +11,12 @@ const FormTitle = ({ text, textColor, rectWidth, rectColor }) => {
         </div>
     );
 }
+
+FormTitle.proptypes = {
+
+ stringProp : PropTypes.string,
+
+}
+
 
 export default FormTitle;
