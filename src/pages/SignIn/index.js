@@ -57,7 +57,11 @@ const SignIn = () => {
                     </div>
                 </label>
                 <div className="forget-password-div">
-                    <div className="empty-div"></div><p id="forget">Forget Password</p>
+                    <div className="empty-div"></div>
+                    <Link to={'/forget-password'} >
+                    <p id="forget">Forget Password</p>
+                        </Link>
+
                 </div>
                 <Button className="sign-btn" text="Login"/>
                 </form>

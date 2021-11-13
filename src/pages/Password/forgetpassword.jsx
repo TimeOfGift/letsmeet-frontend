@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './forgetpassword.scss'
+import './password.scss'
 import Button from '../../components/Button'
-import FormTitle from './../../components/FormTitle'
+import FormTitle from '../../components/FormTitle'
 
 
 
@@ -23,18 +23,18 @@ const Forgetpassword = () => {
         <div className="containerhouse">
             <div className="maincontainer">
                 <div className='firstparagraph'>
-                    <FormTitle  className="forgotpassword" text="Forgot Password" rectColor="#FFA500CC"/>
+                    <FormTitle  text="Forgot Password" rectColor="#FFA500CC" textColor='black'/>
                 </div>
                 
                 <div className="secondparagraph">
-                    <p className="emailentry" >Enter your email address</p>
+                    <p className="entry" >Enter your email address</p>
                 </div>
                 <div className="emailadress">
-                     <input type="text" placeholder="Email address" className="emailinput" value={email}
+                     <input type="text" placeholder="Email address" value={email}
                         onChange={handleChange} /> 
                 </div>
                 <div className="buttondiv">
-                    <Button className="corebutton" text="Submit"/>            
+                    <Button className="corebutton" text="Submit" radius='9px'/>            
                 </div>
             </div>
         </div>

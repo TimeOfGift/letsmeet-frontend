@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './resetpassword.scss'
-import Button from "./../../components/Button"
-import FormTitle from './../../components/FormTitle'
+import './password.scss'
+import Button from "../../components/Button"
+import FormTitle from '../../components/FormTitle'
 
 
 const Resetpassword = () => {
@@ -12,22 +12,19 @@ const Resetpassword = () => {
          setPassword( e.target.value)
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-    }
+    
 
     return (
         <div>
             <div className="containerhouse">
                 <div className="maincontainer">
                     <FormTitle className="resetpassword" text="Reset Password" rectColor=" #FFA500CC" />
-                    <p className="passwordentry" > Enter new password</p>
+                    <p className="entry" > Enter new password</p>
                     <div>
-                        <input type="password" placeholder="Password" className="passwordinput" value={password}
+                        <input type="password" placeholder="Password"  value={password}
                             onChange={handleChange} />
                     </div>
-                    <Button className="corebutton" text="Reset Password" handleClick={handleSubmit}></Button>
+                    <Button textColor="black" radius='9px' className="corebutton" text="Reset Password"></Button>
 
                 </div>
             </div>
