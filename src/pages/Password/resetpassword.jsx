@@ -18,7 +18,7 @@ const Resetpassword = () => {
         <div>
             <div className="containerhouse">
                 <div className="maincontainer">
-                    <FormTitle className="resetpassword" text="Reset Password" rectColor=" #FFA500CC" />
+                    <FormTitle className="resetpassword" text="Reset Password" rectColor=" #FFA500CC" textColor="black" />
                     <p className="entry" > Enter new password</p>
                     <div>
                         <input type="password" placeholder="Password"  value={password}
