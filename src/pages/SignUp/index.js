@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Button from '../../components/Button';
 import "./signUp.scss";
 import FormTitle from '../../components/FormTitle'
+import PropTypes from 'prop-types';
 
 
 const SignUp = () => {
@@ -39,4 +40,11 @@ const SignUp = () => {
     );
 }
 
-export default SignUp;
+SignUp.propTypes = {
+    text : PropTypes.string.isRequired,
+    textColor : PropTypes.string,
+    rectColor : PropTypes.string,
+   
+   }
+
+ export default SignUp;
