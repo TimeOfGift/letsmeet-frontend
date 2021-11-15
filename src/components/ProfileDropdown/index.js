@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./profileDropdown.scss";
+import PropTypes from 'prop-types';
+
 
 const ProfileDropdown = ({ userName, imgUrl }) => {
 
@@ -66,6 +68,13 @@ const ProfileDropdown = ({ userName, imgUrl }) => {
     </div>
   );
 }
+
+ProfileDropdown.propTypes = {
+  userName : PropTypes.string,
+  imgUrl : PropTypes.string,
+  
+}
+
 
 export default ProfileDropdown;
 
