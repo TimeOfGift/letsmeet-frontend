@@ -4,6 +4,8 @@ import Home from "./pages/Home/LandindPage";
 import SignUp from "./pages/SignUp";
 import TopNav from "./components/TopNav";
 import Signin from "./pages/SignIn"
+import Forgetpassword from "./pages/Password/forgetpassword";
+import Resetpassword from "./pages/Password/resetpassword"
 
 const Routes = () => {
   return (
@@ -13,14 +15,21 @@ const Routes = () => {
           <Home />
         </Route>
         <>
-        <TopNav/>
-        <Route exact path="/signup">
-          <SignUp />
-        </Route>
+          <TopNav />
+          <Route exact path="/signup">
+            <SignUp />
+          </Route>
+          <Route exact path="/forget-password">
+            <Forgetpassword />
+          </Route>
           <Route exact path="/login">
             <Signin />
           </Route>
+          <Route exact path="/reset-password">
+            <Resetpassword />
+          </Route>
         </>
+
       </Switch>
     </Router >
   )

@@ -5,8 +5,6 @@ import "./dropdown.scss";
     const [isActive, setIsActive] = useState(false);
     const [color, setColor] = useState("#DEDEDE");
 
-
-
     const isToggled = () => {
       setIsActive(!isActive);
     };
@@ -18,7 +16,6 @@ import "./dropdown.scss";
       }
     }
     useEffect(() => {
-
       document.addEventListener("mousedown", handleClickOutside);
       return () => {
         document.removeEventListener("mousedown", handleClickOutside);
