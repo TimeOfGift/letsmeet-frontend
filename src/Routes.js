@@ -29,9 +29,9 @@ const Routes = () => {
             <Resetpassword />
           </Route>
         </>
-
+        
       </Switch>
-    </Router >
+    </Router>
   )
 }
 

@@ -5,6 +5,10 @@ import "./dropdown.scss";
     const [isActive, setIsActive] = useState(false);
     const [color, setColor] = useState("#DEDEDE");
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 14fad44... space
     const isToggled = () => {
       setIsActive(!isActive);
     };
@@ -21,6 +25,7 @@ import "./dropdown.scss";
         document.removeEventListener("mousedown", handleClickOutside);
       };
     }, [userRef]);
+    
 
     return (
       <div className="notificaton-bell" ref={userRef}>
