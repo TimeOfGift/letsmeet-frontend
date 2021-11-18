@@ -1,5 +1,6 @@
 import React from "react";
 import Button from './../Button';
+import PropTypes from "prop-types";
 
 import './EventTitle.scss';
 
@@ -26,5 +27,14 @@ const EventTitle = (props) => {
       </div>
     );
 	}
+
+EventTitle.propTypes = {
+  topic: PropTypes.string,
+  supTopic: PropTypes.string,
+  street: PropTypes.string,
+  state: PropTypes.string,
+  date: PropTypes.string,
+  time: PropTypes.string
+}; 
 
 export default EventTitle;

@@ -1,0 +1,123 @@
+.event {
+  background-color: #fff;
+
+  &_border {
+    width: 722px;
+    height: 900px;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+  }
+  &_details {
+    padding: 3rem 5.3rem;
+
+    h4 {
+      font-family: "Abel";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 0.5rem;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.input_venue,
+.input_title {
+  width: 550px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  padding-left: 18px;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+  color: #929292;
+}
+
+.input_description {
+  width: 550px;
+  height: 140px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0px 18px;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+  color: #929292;
+  padding-bottom: 6.6rem;
+}
+
+.event_date {
+  display: flex;
+  justify-content: space-between;
+
+  .input_date {
+    width: 250px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 18px;
+    letter-spacing: 1.5px;
+    color: #929292;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.input_image {
+  width: 550px;
+  height: 191px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.eventbtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+
+  .cancelbtn {
+    background: #ffffff;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    font-family: "Abel";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #01149a;
+    border-radius: 0%;
+  }
+  .submitbtn {
+    background: #ffa500;
+    border: 1px solid #ffa500;
+    box-sizing: border-box;
+    font-family: "Abel";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #000000;
+    border-radius: 0%;
+    margin-left: 1.5rem;
+  }
+}
