@@ -1,5 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './EventDetails.scss';
+import PropTypes from 'prop-types';
+
 
 const EventDetails = ({event}) => {
 
@@ -19,6 +21,10 @@ const EventDetails = ({event}) => {
             </div>
         </div>
     );
+}
+
+EventDetails.propTypes = {
+    event : PropTypes.string
 }
 
 export default EventDetails;

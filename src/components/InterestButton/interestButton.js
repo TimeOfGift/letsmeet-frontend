@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './interestButton.scss';
+import PropTypes from 'prop-types';
 
 
-const InterestButton = ({ text = 'Swimming', handleClick, previousInterest }) => {
+const InterestButton = ({ text = 'Swimming', previousInterest }) => {
     const [selected, setSelected] = useState(false);
 
     const onSelect = (e) => {
@@ -28,15 +29,19 @@ const InterestButton = ({ text = 'Swimming', handleClick, previousInterest }) =>
     );
 
     return (
-
         <div className="interest-btn" onClick={onSelect}>
             <p className="text" style={{ color: (selected && previousInterest) && '#3359DB'}}>{text}</p>
-            <div >
+            <div>
                 {selected ? <span onClick={onCancel}>
                     <CancelSVG /> </span> : <MarkSVG />}
             </div>
         </div>
     )
+}
+
+InterestButton.propTypes = {
+    text : PropTypes.string,
+    previousInterest: PropTypes.string
 }
 
 export default InterestButton;

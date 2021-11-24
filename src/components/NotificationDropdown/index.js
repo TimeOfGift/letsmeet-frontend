@@ -5,10 +5,6 @@ import "./dropdown.scss";
     const [isActive, setIsActive] = useState(false);
     const [color, setColor] = useState("#DEDEDE");
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 14fad44... space
     const isToggled = () => {
       setIsActive(!isActive);
     };
