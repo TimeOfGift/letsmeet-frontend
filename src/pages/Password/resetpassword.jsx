@@ -15,6 +15,7 @@ const Resetpassword = () => {
     
 
     return (
+<<<<<<< HEAD
         <div>
             <div className="containerhouse">
                 <div className="maincontainer">
@@ -27,10 +28,36 @@ const Resetpassword = () => {
                     <Button textColor="black" radius='9px' className="corebutton" text="Reset Password"></Button>
 
                 </div>
+=======
+      <div>
+        <div className="containerhouse">
+          <div className="maincontainer">
+            <FormTitle
+              textColor="black"
+               className="resetpassword"
+              text="Reset Password"
+              rectColor=" #FFA500CC"
+            />
+            <p className="entry"> Enter new password</p>
+            <div>
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={handleChange}
+              />
+>>>>>>> 31a4c9aa5bba7636127d9edc9780c349a05b5ffd
             </div>
+            <Button
+              textColor="black"
+              radius="9px"
+              className="corebutton"
+              text="Reset Password"
+            ></Button>
+          </div>
         </div>
-
-    )
+      </div>
+    );
 
 }
 export default Resetpassword;
