@@ -18,6 +18,7 @@ const SignIn = () => {
     }
 
     const handleSubmit = (e) => {
+        console.log(userLogin);
         e.preventDefault();
     }
 
