@@ -2,23 +2,29 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom'
 import Button from './../../components/Button/index';
 import FormTitle from '../../components/FormTitle';
+import { useDispatch, useSelector } from 'react-redux';
+import { signin } from '../../redux/actions/auth';
+import './signin.scss';
 
-import './signin.scss'
+
 
 const SignIn = () => {
     const [passwordShown, setPasswordShown] = useState(false);
     const [userLogin, setUserLogin] = useState({});
 
+
+    const dispatch = useDispatch();
+    const { user, loading } = useSelector(state => state.signinReducer)
+
     const handleChange = (e) => {
         setUserLogin(prevUser => ({...prevUser, [e.target.name]: e.target.value}));
     } 
 
-    const toggleShownPassword = () => {
-        setPasswordShown(!passwordShown)
-    }
+    const toggleShownPassword = () => { setPasswordShown(!passwordShown) }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e) => { 
         e.preventDefault();
+        dispatch(signin(userLogin))
     }
 
     return(
@@ -35,7 +41,7 @@ const SignIn = () => {
                 <form  className="signin-form" onSubmit={handleSubmit}>
                 <label className="label">
                     Enter your username or email address
-                    <input type="email" name="name" onChange={handleChange}/>
+                    <input type="email" name="email" onChange={handleChange}/>
                 </label>
                 <label className="label">
                     Enter your password
@@ -58,10 +64,9 @@ const SignIn = () => {
                 </label>
                 <div className="forget-password-div">
                     <div className="empty-div"></div>
-                    <Link to={'/forget-password'} >
-                    <p id="forget">Forget Password</p>
-                        </Link>
-
+                    <div className="forget">
+                    <Link to={'/forget-password'} ><p>Forget Password</p></Link>
+                    </div>
                 </div>
                 <Button className="sign-btn" text="Login"/>
                 </form>

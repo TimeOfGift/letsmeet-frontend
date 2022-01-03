@@ -6,6 +6,8 @@ import "./signUp.scss";
 import FormTitle from '../../components/FormTitle'
 import { signup } from '../../redux/actions/auth'
 import Toast from "../../components/Toast";
+
+
 const SignUp = () => {
     const [data, setData] = useState({});
 
@@ -21,7 +23,6 @@ const SignUp = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(signup(data));
-
     }
 
     return (
