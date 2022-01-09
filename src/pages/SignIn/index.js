@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom'
+import React, {useState, useEffect} from 'react';
+import {Link, useHistory} from 'react-router-dom'
 import Button from './../../components/Button/index';
 import FormTitle from '../../components/FormTitle';
 import validation from '../validation';
@@ -14,10 +14,18 @@ const SignIn = () => {
     const [passwordShown, setPasswordShown] = useState(false);
     const [userLogin, setUserLogin] = useState({});
     const [errors, setErrors] = useState({});
+    const history = useHistory();
 
 
     const dispatch = useDispatch();
-    const { user, loading } = useSelector(state => state.signinReducer)
+const { user, loading } = useSelector(state => state.signinReducer);
+ 
+useEffect(()=>{
+    if(user?.status === "Success"){
+    history.push('/')
+ }
+}, [user])
+
 
     const handleChange = (e) => {
         setUserLogin(prevUser => ({...prevUser, [e.target.name]: e.target.value}));
@@ -25,11 +33,12 @@ const SignIn = () => {
 
     const toggleShownPassword = () => { setPasswordShown(!passwordShown) }
 
-    const handleSubmit = (e) => { 
+    const handleSubmit = (e) => {
         e.preventDefault();
-        setErrors(validation(userLogin))
-        dispatch(signin(userLogin))
+        setErrors(validation(userLogin)) 
+        dispatch(signin(userLogin)); 
     }
+    
 
     return(
         <>{user?.status && <Toast header={user.status} message={user.message} type={user.status} />}

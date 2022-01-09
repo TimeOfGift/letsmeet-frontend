@@ -25,7 +25,7 @@ const Forgetpassword = () => {
                         <p className="entry" >Enter your email address</p>
                     </div>
                     <div className="emailadress">
-                        <input type="email" name="email" placeholder="Email address" value={email}
+                        <input type="email" name="email" placeholder="youremail@email.com" value={email}
                             onChange={handleChange} />
                     </div>
                     {errors.email && <p className="danger">{errors.email}</p>}
