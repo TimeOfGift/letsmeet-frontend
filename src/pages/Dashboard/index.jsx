@@ -35,7 +35,7 @@ const Dashboard = (props) => {
       <main className="dashboard-main">
         <div className="top">
           <div className="filter">
-            <FormTitle text="Filter Events" />
+            <FormTitle text="Filter Events" textColor='black' rectColor='orange'/>
             <div className="filter-location">
               <p>Location</p>
               <input />
@@ -45,7 +45,7 @@ const Dashboard = (props) => {
               <input />
             </div>
             <div className="applyBtn">
-              <Button text="Apply" bgColor="blue" textColor="white" />
+              <Button text="Apply" bgColor="orange" textColor="white" />
             </div>
           </div>
           <div className="date-filter">
@@ -60,7 +60,7 @@ const Dashboard = (props) => {
               </div>
             ))}
             <div className="loadmore">
-              <Button text="Load More" bgColor="blue" textColor="white" />
+              <Button text="Load More" bgColor="orange" textColor="white" />
             </div>
           </div>
         )}
