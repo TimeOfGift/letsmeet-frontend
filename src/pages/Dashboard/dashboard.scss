@@ -23,15 +23,90 @@
     }
   }
 
-  .main {
+  .dashboard-main {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 5px;
     height: 100%;
+    padding: 20px;
   }
 
   .filter {
-    width: 500px;
-    // background-color: red;
+    width: 350px;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 15px;
+
+    .applyBtn {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+
+      button {
+        font-size: 16px;
+        padding: 5px 40px;
+        width: 60%;
+      }
+
+    }
+
+    .filter-location {
+      margin-top: 15px;
+    }
+
+    .filter-location,
+    .filter-category {
+      padding: 15px 20px 0;
+
+      p {
+        font-family: Abel;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin-bottom: 12px;
+      }
+    }
+
+
+  }
+
+  .date-filter {
+    margin-top: 30px;
+  }
+
+  .react-calendar {
+    border: none;
+    font-family: 'Abel';
+    border-radius: 15px;
+    padding-left: 5px;
+
+  }
+
+
+
+  .display {
+    flex: 1;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .card {
+      width: 32%;
+      margin-top: 20px;
+    }
+
+    .loadmore{
+      display: flex;
+       justify-content: center;
+       width: 100%;
+       margin-top: 20px;
+       button {
+         width: 250px;
+       }
+    }
   }
 }
