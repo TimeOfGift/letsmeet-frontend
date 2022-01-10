@@ -35,6 +35,7 @@ useEffect(()=>{
     const toggleShownPassword = () => { setPasswordShown(!passwordShown) }
 
     const handleSubmit = (e) => {
+        console.log(userLogin);
         e.preventDefault();
         setErrors(validation(userLogin)) 
         dispatch(signin(userLogin)); 
