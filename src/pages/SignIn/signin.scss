@@ -69,11 +69,9 @@
     width: 50%;
 }
 
-#forget {
+.forget {
     width: 50%;
-    text-align: end;
-    margin-top: 10px;
-    
+    margin-top: 10px;   
 }
 
 .signup {
@@ -129,4 +127,7 @@ input {
     padding: 0;
     font-size: 23px;
     cursor: pointer;
+}
+.danger {
+    color: red;
 }

@@ -23,5 +23,5 @@ export const notifications = [
     details: "just created a new event on",
     eventTitle: "Live Jam Group",
     time: "8 mins ago",
-  },
+  }
 ];
