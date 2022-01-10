@@ -18,12 +18,13 @@ const SignIn = () => {
 
 
     const dispatch = useDispatch();
-const { user, loading } = useSelector(state => state.signinReducer);
+const { user } = useSelector(state => state.signinReducer);
  
 useEffect(()=>{
     if(user?.status === "Success"){
     history.push('/dashboard')
  }
+ // eslint-disable-next-line 
 }, [user])
 
 

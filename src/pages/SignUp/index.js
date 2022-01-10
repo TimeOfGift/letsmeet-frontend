@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '../../components/Button';
@@ -14,7 +14,7 @@ const SignUp = () => {
     const [errors, setErrors] = useState({});
 
     const dispatch = useDispatch();
-    const { user, loading } = useSelector(state => state.signupReducer);
+    const { user } = useSelector(state => state.signupReducer);
 
     
     const handleChange = (e) => {
