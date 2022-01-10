@@ -22,7 +22,7 @@ const { user, loading } = useSelector(state => state.signinReducer);
  
 useEffect(()=>{
     if(user?.status === "Success"){
-    history.push('/')
+    history.push('/dashboard')
  }
 }, [user])
 
