@@ -30,19 +30,10 @@ useEffect(()=>{
 
 
     const dispatch = useDispatch();
-    const { user, loading } = useSelector(state => state.signinReducer)
+    const { user } = useSelector(state => state.signinReducer)
 
     const handleChange = (e) => {
         setUserLogin(prevUser => ({...prevUser, [e.target.name]: e.target.value}));
-<<<<<<< HEAD
-    } 
-
-    const toggleShownPassword = () => { setPasswordShown(!passwordShown) }
-
-    const handleSubmit = (e) => { 
-        e.preventDefault();
-        dispatch(signin(userLogin))
-=======
     }
 
     const toggleShownPassword = () => { setPasswordShown(!passwordShown) }
@@ -52,7 +43,6 @@ useEffect(()=>{
         e.preventDefault();
         setErrors(validation(userLogin)) 
         dispatch(signin(userLogin)); 
->>>>>>> f8667b9b93901690603c87fade1c1cc287ccf97e
     }
     
 

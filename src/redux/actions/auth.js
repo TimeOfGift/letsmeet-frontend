@@ -33,13 +33,7 @@ export const signin = (data) => dispatch => {
   dispatch({
     type: USER_SIGNIN_REQUEST
   })
-<<<<<<< HEAD
-  console.log(data)
   axios.post('https://event-meet.herokuapp.com/api/v1/auth/signin', data).then(user => {
-    console.log(user, '99999999999')
-=======
-  axios.post('https://event-meet.herokuapp.com/api/v1/auth/signin', data).then(user => {
->>>>>>> f8667b9b93901690603c87fade1c1cc287ccf97e
     dispatch({
       type: USER_SIGNIN_SUCCESS,
       payload: user.data
