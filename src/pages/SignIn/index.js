@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom'
+import React, {useState, useEffect} from 'react';
+import {Link, useHistory} from 'react-router-dom'
 import Button from './../../components/Button/index';
 import FormTitle from '../../components/FormTitle';
+import validation from '../validation';
 import { useDispatch, useSelector } from 'react-redux';
 import { signin } from '../../redux/actions/auth';
+import Toast from '../../components/Toast';
 import './signin.scss';
 
 
@@ -11,6 +13,20 @@ import './signin.scss';
 const SignIn = () => {
     const [passwordShown, setPasswordShown] = useState(false);
     const [userLogin, setUserLogin] = useState({});
+    const [errors, setErrors] = useState({});
+    const history = useHistory();
+
+
+    const dispatch = useDispatch();
+const { user } = useSelector(state => state.signinReducer);
+ 
+useEffect(()=>{
+    if(user?.status === "Success"){
+    history.push('/dashboard')
+ }
+ // eslint-disable-next-line 
+}, [user])
+
 
 
     const dispatch = useDispatch();
@@ -18,6 +34,7 @@ const SignIn = () => {
 
     const handleChange = (e) => {
         setUserLogin(prevUser => ({...prevUser, [e.target.name]: e.target.value}));
+<<<<<<< HEAD
     } 
 
     const toggleShownPassword = () => { setPasswordShown(!passwordShown) }
@@ -25,9 +42,22 @@ const SignIn = () => {
     const handleSubmit = (e) => { 
         e.preventDefault();
         dispatch(signin(userLogin))
+=======
     }
 
+    const toggleShownPassword = () => { setPasswordShown(!passwordShown) }
+
+    const handleSubmit = (e) => {
+        console.log(userLogin);
+        e.preventDefault();
+        setErrors(validation(userLogin)) 
+        dispatch(signin(userLogin)); 
+>>>>>>> f8667b9b93901690603c87fade1c1cc287ccf97e
+    }
+    
+
     return(
+        <>{user?.status && <Toast header={user.status} message={user.message} type={user.status} />}
         <div className="main">
             <div className="signin-container">
                 <div className="signup-div">
@@ -43,6 +73,7 @@ const SignIn = () => {
                     Enter your username or email address
                     <input type="email" name="email" onChange={handleChange}/>
                 </label>
+                {errors.email && <p className="danger">{errors.email}</p>}
                 <label className="label">
                     Enter your password
                     <div className="input-password">
@@ -62,6 +93,7 @@ const SignIn = () => {
                     </div>
                     </div>
                 </label>
+                {errors.password && <p className="danger">{errors.password}</p>}
                 <div className="forget-password-div">
                     <div className="empty-div"></div>
                     <div className="forget">
@@ -72,6 +104,7 @@ const SignIn = () => {
                 </form>
             </div>
         </div>
+        </>
     )
 }
 

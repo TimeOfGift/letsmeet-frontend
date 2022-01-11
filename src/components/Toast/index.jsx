@@ -22,7 +22,6 @@ const [showToast, setShowToast] = useState(false);
 
 useEffect(() => {
   setShowToast(true);
-
   // Hides the message after 2 default seconds (configurable)
   const t = setTimeout(() => setShowToast(false), 3000);
   return () => clearTimeout(t);

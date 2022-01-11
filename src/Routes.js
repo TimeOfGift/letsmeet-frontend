@@ -6,6 +6,7 @@ import TopNav from "./components/TopNav";
 import Signin from "./pages/SignIn"
 import Forgetpassword from "./pages/Password/forgetpassword";
 import Resetpassword from "./pages/Password/resetpassword"
+import Dashboard from "./pages/Dashboard";
 
 const Routes = () => {
   return (
@@ -27,6 +28,9 @@ const Routes = () => {
           </Route>
           <Route exact path="/reset-password">
             <Resetpassword />
+          </Route>
+          <Route exact path="/dashboard">
+            <Dashboard />
           </Route>
         </>
 

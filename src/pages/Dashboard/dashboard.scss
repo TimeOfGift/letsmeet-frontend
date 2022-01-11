@@ -1,0 +1,123 @@
+.dashboard {
+  .tab {
+    background: white;
+    height: 60px;
+    box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(204, 204, 204);
+
+    .item {
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      margin-right: 50px;
+      cursor: pointer;
+      border-bottom: 3px solid white;
+
+    }
+
+    .activeTab {
+      border-bottom: 3px solid orange;
+    }
+  }
+
+  .dashboard-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .filter {
+    width: 350px;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 15px;
+
+    .applyBtn {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+
+      button {
+        font-size: 16px;
+        padding: 5px 40px;
+        width: 60%;
+      }
+
+    }
+
+    .filter-location {
+      margin-top: 15px;
+    }
+
+    .filter-location,
+    .filter-category {
+      padding: 15px 20px 0;
+
+      p {
+        font-family: Abel;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin-bottom: 12px;
+      }
+    }
+
+
+  }
+
+  .date-filter {
+    margin-top: 30px;
+  }
+
+  .react-calendar {
+    border: none;
+    font-family: 'Abel';
+    border-radius: 15px;
+    padding-left: 5px;
+
+    .react-calendar__tile--active {
+      background-color: orange;
+    }
+
+    .react-calendar__tile--now {
+      background: #000000;
+      color: white;
+    }
+  }
+
+
+
+  .display {
+    flex: 1;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .card {
+      width: 32%;
+      margin-top: 20px;
+    }
+
+    .loadmore {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 20px;
+
+      button {
+        width: 250px;
+        font-size: 16px;
+        font-weight: bolder;
+ }
+    }
+  }
+}
