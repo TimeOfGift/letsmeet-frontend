@@ -18,7 +18,7 @@ const SignIn = () => {
 
 
     const dispatch = useDispatch();
-const { user } = useSelector(state => state.signinReducer);
+    const { user } = useSelector(state => state.signinReducer);
  
 useEffect(()=>{
     if(user?.status === "Success"){
@@ -26,11 +26,6 @@ useEffect(()=>{
  }
  // eslint-disable-next-line 
 }, [user])
-
-
-
-    const dispatch = useDispatch();
-    const { user } = useSelector(state => state.signinReducer)
 
     const handleChange = (e) => {
         setUserLogin(prevUser => ({...prevUser, [e.target.name]: e.target.value}));
@@ -43,8 +38,7 @@ useEffect(()=>{
         e.preventDefault();
         setErrors(validation(userLogin)) 
         dispatch(signin(userLogin)); 
-    }
-    
+}
 
     return(
         <>{user?.status && <Toast header={user.status} message={user.message} type={user.status} />}

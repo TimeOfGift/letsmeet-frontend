@@ -38,6 +38,7 @@ export const signin = (data) => dispatch => {
       type: USER_SIGNIN_SUCCESS,
       payload: user.data
     })
+    localStorage.setItem('isAuthenticated', user.data.token);
   }).catch(e => {
     dispatch({
       type: USER_SIGNIN_FAILURE,
