@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/LandindPage";
 import SignUp from "./pages/SignUp";
 import TopNav from "./components/TopNav";
-import Signin from "./pages/SignIn"
+import Signin from "./pages/SignIn";
 import Forgetpassword from "./pages/Password/forgetpassword";
-import Resetpassword from "./pages/Password/resetpassword"
+import Resetpassword from "./pages/Password/resetpassword";
 import Dashboard from "./pages/Dashboard";
+import ProtectedRoute from './ProtectedRoute';
 
 const Routes = () => {
   return (
@@ -29,11 +30,10 @@ const Routes = () => {
           <Route exact path="/reset-password">
             <Resetpassword />
           </Route>
-          <Route exact path="/dashboard">
+           <ProtectedRoute exact path="/dashboard">
             <Dashboard />
-          </Route>
+          </ProtectedRoute>         
         </>
-
       </Switch>
     </Router >
   )
