@@ -37,9 +37,9 @@ const ProfileDropdown = ({ userName, imgUrl }) => {
           <span className="dropdown_username" style={{color}}>{userName}</span>
           <svg width="9" height="7" viewBox="0 0 9 7" fill="inherit" xmlns="http://www.w3.org/2000/svg">
             <path 
-            classname='profile-icon'
-            fill-rule="evenodd"
-             clip-rule="evenodd" 
+            className='profile-icon'
+            fillRule="evenodd"
+             clipRule="evenodd" 
              d={`M4.65312 
              5.98759L8.47804 
              0.799359C8.5878 

@@ -6,7 +6,11 @@
     cursor: pointer;
     margin-top: 10px;
 
-    &:hover{
-       opacity: .9;
+    &:hover {
+        opacity: .9;
     }
+}
+
+.cssfx-messaging-balls {
+    justify-content: center;
 }

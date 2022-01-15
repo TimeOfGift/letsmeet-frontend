@@ -1,15 +1,15 @@
 import React from "react";
 import { Redirect, Route } from "react-router-dom";
 
-const ProtectedRoute = ({children, ...rest}) =>{
-    const authToken = localStorage.getItem("isAuthenticated")
+const ProtectedRoute = ({ children, ...rest }) => {
 
     return (
-        <Route 
+        <Route
             {...rest}
-            render={() =>
-                authToken ? children : <Redirect to="/login" />
-            }
+            render={() => {
+                const isAuthenticated = localStorage.getItem("isAuthenticated");
+                return isAuthenticated ? children : <Redirect to="/login" />
+            }}
         />
     )
 

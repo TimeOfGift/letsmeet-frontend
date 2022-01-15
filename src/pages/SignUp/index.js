@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '../../components/Button';
 import "./signUp.scss";
@@ -12,17 +12,37 @@ import Toast from "../../components/Toast";
 const SignUp = () => {
     const [data, setData] = useState({});
     const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false);
 
     const dispatch = useDispatch();
+    const history = useHistory();
+
     const { user } = useSelector(state => state.signupReducer);
 
+    useEffect(() => {
+        if (user?.status === "success") {
+            setTimeout(() => history.push('/login'), 1000 )
+           
+        }
+        if (user?.status === "error") {
+            setLoading(false);
+        }
     
+        // eslint-disable-next-line 
+    }, [user])
     const handleChange = (e) => {
         const { name, value } = e.target;
         setData(prev => ({ ...prev, [name]: value }));
     }
 
+    useEffect(() => {
+        if (Object.keys(errors).length > 0){
+            setLoading(false);
+        }
+    }, [errors])
+
     const handleSubmit = (e) => {
+        setLoading(true)
         e.preventDefault();
         setErrors(validation(data))
         dispatch(signup(data));
@@ -59,7 +79,7 @@ const SignUp = () => {
                         <input name='password' onChange={handleChange} type='password' placeholder="Password" className="password" />
                         {errors.password && <p className="danger">{errors.password}</p>}
                     </div>
-                    <Button text="sign up" className="signup_button" />
+                    <Button loading={loading} text="sign up" className="signup_button" />
 
                 </form>
             </div>
