@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import { Helmet } from "react-helmet";
 import Calendar from "react-calendar";
-import FormTitle from './../../components/FormTitle';
+import FormTitle from '../../components/FormTitle';
 import Button from "../../components/Button";
 import EventCard from "../../components/EventCard";
 import "react-calendar/dist/Calendar.css";
@@ -21,6 +22,10 @@ const Dashboard = (props) => {
 
   return (
     <div className="dashboard">
+      <Helmet>
+        <title>Event Dashboard</title>
+        <meta name="description" content="Event Meet Dashboard Page" />
+      </Helmet>
       <div className="tab">
         {tabs.map((t) => (
           <h2

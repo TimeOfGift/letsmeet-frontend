@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
-
+import { Helmet } from 'react-helmet';
 import Button from './../../components/Button/index';
 import FormTitle from '../../components/FormTitle';
 import validation from '../validation';
@@ -48,7 +48,10 @@ const SignIn = () => {
     return (
         <>{user?.status && <Toast header={user.status} message={user.message} type={user.status} />}
             <div className="main">
-
+                <Helmet>
+                    <title>Sign In</title>
+                    <meta name="description" content="Sign In page" />
+                </Helmet>
                 <div className="signin-container">
                     <div className="signup-div">
                         <div className="empty-div"></div><div className="signup"><p>No Account?</p>
