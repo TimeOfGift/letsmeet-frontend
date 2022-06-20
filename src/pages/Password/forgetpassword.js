@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import './password.scss';
 import Button from '../../components/Button';
 import FormTitle from '../../components/FormTitle';
@@ -18,6 +19,10 @@ const Forgetpassword = () => {
 
     return (
         <form onSubmit={handleSubmit}>
+            <Helmet>
+                <title>Forget Password</title>
+                <meta name="description" content="Forget Password Page" />
+            </Helmet>
             <div className="containerhouse">
                 <div className="maincontainer">
                     <FormTitle text="Forgot Password" rectColor="#FFA500CC" textColor='black' />

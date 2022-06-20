@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { Helmet } from 'react-helmet'
 import Button from '../../components/Button';
 import "./signUp.scss";
 import FormTitle from '../../components/FormTitle';
 import validation from "../validation";
 import { signup } from '../../redux/actions/auth';
 import Toast from "../../components/Toast";
-
 
 const SignUp = () => {
     const [data, setData] = useState({});
@@ -50,6 +50,10 @@ const SignUp = () => {
 
     return (
         <>  {user?.status && <Toast header={user.status} message={user.message} type={user.status} />}
+           <Helmet>
+                <title>Sign Up</title>
+                <meta name="description" content="Sign Up page" />
+           </Helmet>
             <div className="signup_page">
                 <form onSubmit={handleSubmit} className="signup_cover">
                     <div className="account_login">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet'
 import './password.scss'
 import Button from "../../components/Button"
 import FormTitle from '../../components/FormTitle'
@@ -16,6 +17,10 @@ const Resetpassword = () => {
 
     return (
       <div>
+        <Helmet>
+          <title>Reset Password</title>
+          <meta name="description" content="Reset Password Page" />
+        </Helmet>
         <div className="containerhouse">
           <div className="maincontainer">
             <FormTitle
