@@ -7,8 +7,11 @@ import InterestList from './pages/Interest';
 function App() {
   return (
     <div className="App">
-      <InterestList />
+      
       <Routes />
+
+      <InterestList />
+
     </div>
   );
 }
