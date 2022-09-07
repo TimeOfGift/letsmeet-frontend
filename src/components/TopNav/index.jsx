@@ -17,7 +17,7 @@ const TopNav = ({imgUrl}) => {
       </div>
       <div className="user-notification">
         <Notification notifications={notifications} />
-        <Profile imgUrl={imgUrl || defaultImg} userName="Jstar" />
+        <Profile imgUrl={imgUrl || defaultImg} userName="UserName" />
       </div>
     </div>
   );

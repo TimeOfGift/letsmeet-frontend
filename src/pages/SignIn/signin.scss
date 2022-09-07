@@ -1,3 +1,4 @@
+
 .main {
     display: flex;
     justify-content: center;
@@ -28,6 +29,7 @@
     padding: 40px 30px 0px;
     background: #FFFFFF;
     border-radius: 20px;
+    box-shadow: 0 3px 10px RGB(0 0 0 / 0.2);
 }
 
 .label {
@@ -63,6 +65,7 @@
 .forget-password-div {
     display: flex;
     width: 100%;
+    justify-content: flex-end;
 }
 
 .empty-div {
@@ -70,7 +73,6 @@
 }
 
 .forget {
-    width: 50%;
     margin-top: 10px;   
 }
 
@@ -127,6 +129,9 @@ input {
     padding: 0;
     font-size: 23px;
     cursor: pointer;
+}
+.svg-class{
+    margin: auto;
 }
 .danger {
     color: red;

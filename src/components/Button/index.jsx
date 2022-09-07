@@ -9,8 +9,9 @@ const Button = ({
   radius,
   bgColor,
   borderColor,
-  loading = false,
+  loading = false
 }) => {
+
   const style = {
     color: textColor,
     borderRadius: radius,
@@ -18,7 +19,6 @@ const Button = ({
     border: `1px solid ${borderColor}`,
     cursor: loading ? 'default' : 'pointer',
     padding: loading && '18px 40px'
-  
   };
 
   return (
@@ -29,7 +29,7 @@ const Button = ({
       disabled={loading}
     >
       {loading ? (
-        <Messaging color="#ffffff" width="10px" height="10px" duration=".51s" />
+        <Messaging className="cssfx-messaging-balls" color="#ffffff" width="10px" height="10px" duration=".51s" />
       ) : (
         text
       )}
