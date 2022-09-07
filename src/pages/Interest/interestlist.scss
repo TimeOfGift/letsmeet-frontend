@@ -1,19 +1,11 @@
 
 .interest_list{
-    height: 1440px;
-    left: 0px;
-    top: 69px;
-    border-radius: 0px;
-    background: hsla(192, 29%, 97%, 1);
     display: flex;
     justify-content: space-around;
-
+    padding: 100px;
+    flex-wrap: wrap;
     .item{
-        padding-top: 30px;
+        margin-top: 20px;
     }
-
-   
-
-
 }
 
