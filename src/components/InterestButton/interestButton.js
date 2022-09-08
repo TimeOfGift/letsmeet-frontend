@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './interestButton.scss';
 
 
-const InterestButton = ({ text = 'Swimming', handleClick, previousInterest }) => {
+const InterestButton = ({ name = 'Swimming', handleClick, previousInterest }) => {
     const [selected, setSelected] = useState(false);
 
     const onSelect = (e) => {
@@ -30,7 +30,7 @@ const InterestButton = ({ text = 'Swimming', handleClick, previousInterest }) =>
     return (
 
         <div className="interest-btn" onClick={onSelect}>
-            <p className="text" style={{ color: (selected && previousInterest) && '#3359DB'}}>{text}</p>
+            <p className="text" style={{ color: (selected && previousInterest) && '#3359DB'}}>{name}</p>
             <div >
                 {selected ? <span onClick={onCancel}>
                     <CancelSVG /> </span> : <MarkSVG />}

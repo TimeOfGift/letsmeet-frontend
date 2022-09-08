@@ -5,7 +5,7 @@ export default {
   title: "Event Meet/InterestButton",
   component: InterestButton,
   args: {
-    text: "Swimming",
+    name: "Swimming",
     handleClick: () => true,
     previousInterest: true
   },
